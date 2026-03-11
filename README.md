@@ -1,21 +1,35 @@
 # general-skills
 
-Project-agnostic AI agent skills and supporting files for reuse across repositories.
+Project-agnostic AI agent skills, templates, and helper files for reuse across repositories.
 
-## Contents
+## Purpose
 
-- .codex/skills/thread-context-capture/: reusable workflow for distilling AI agent threads into durable project and cross-project memory notes.
+This repository is a shared source of truth for reusable agent workflows that should not live inside a single project.
 
-## Usage
+## Repository Layout
 
-Copy the relevant skill directory into a target repo .codex/skills/ tree, or use this repository as a shared source of truth.
+- `.codex/skills/`: reusable skills and their supporting files.
+- `README.md`: overview and skill index.
+- `AGENTS.md`: repo-specific maintenance guidance.
 
-The included thread-context-capture skill provides:
+## Available Skills
 
+### `thread-context-capture`
+
+Distill AI agent threads into durable project and cross-project memory notes.
+
+Provides:
 - note templates for project and portable memory
 - a helper script to scaffold new memory notes
 - explicit guidance for when to update an existing note versus create a new one
 
-## Initial Scope
+Path:
+- `.codex/skills/thread-context-capture/`
 
-This repository is intentionally small to start. Add only skills and agent files that are genuinely project-agnostic.
+## Usage
+
+Copy the relevant skill directory into a target repository `.codex/skills/` tree, or use this repository directly as a shared reference.
+
+## Contribution Rule
+
+Only add skills and agent files that are genuinely project-agnostic.
